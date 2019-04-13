@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <import type="java.lang.Boolean"/>
+        <import type="android.text.InputType" />
+        <import type="androidx.lifecycle.MutableLiveData" />
+        <import type="androidx.core.content.ContextCompat" />
+        <variable
+            name="collapsed"
+            type="Boolean" />
+        <variable
+            name="airportName"
+            type="MutableLiveData&lt;String>" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:transitionName="chooseAirportView"
+        android:id="@+id/chooseAirportView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@{ safeUnbox(collapsed) ? @drawable/bg_choose_airport_collapsed : @drawable/bg_choose_airport_expanded}"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/airportIata"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@{`WWW`, default=`WWW`}"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextYourAirport"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/airportCity" />
+
+
+        <TextView
+            android:id="@+id/airportCity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{`Oslo`, default=`Oslo`}"
+            app:layout_constraintBottom_toTopOf="@+id/editTextYourAirport"
+            app:layout_constraintStart_toEndOf="@+id/airportIata"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="35dp" />
+
+        <EditText
+            android:id="@+id/editTextYourAirport"
+            style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@{ safeUnbox(collapsed) ? @drawable/edit_text_transparent : @drawable/edit_text_background, default=@drawable/edit_text_background }"
+            android:focusable="@{ !safeUnbox(collapsed) }"
+            android:focusableInTouchMode="@{ !safeUnbox(collapsed) }"
+            android:hint="@string/search_for_your_airport"
+            android:inputType="@{ safeUnbox(collapsed) ? InputType.TYPE_NULL : InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS }"
+            android:text="@={ airportName }"
+            android:textAllCaps="false"
+            android:textAppearance="@style/AppTheme.AirportName"
+            android:transitionName="chooseAirportEditText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/airportIata" />
+
+        <ImageButton
+            android:id="@+id/closeButtonYourAirport"
+            style="@android:style/Widget.Material.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/close"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextYourAirport"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextYourAirport"
+            app:srcCompat="@drawable/ic_times"
+            android:visibility="@{ safeUnbox(collapsed) ? View.GONE : View.VISIBLE }"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
