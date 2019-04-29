@@ -40,7 +40,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Halifax, NS", "YHZ", listOf(
-                        _Airport("Stanfield ", "YHZ", 44.8807983398, -63.5085983276)
+                        _Airport("Stanfield", "YHZ", 44.8807983398, -63.5085983276)
                     )
                 ),
                 _City(
@@ -105,7 +105,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Toronto, ON", "YTO", listOf(
-                        _Airport("Pearson ", "YYZ", 43.6772003174, -79.63059997559999)
+                        _Airport("Pearson", "YYZ", 43.6772003174, -79.63059997559999)
                     )
                 ),
                 _City(
@@ -138,7 +138,7 @@ fun populateDatabase(database: MyDatabase) {
             "Colombia", "CO", listOf(
                 _City(
                     "Barranquilla", "BAQ", listOf(
-                        _Airport("Ernesto Cortissoz ", "BAQ", 10.8896, -74.7808)
+                        _Airport("Ernesto Cortissoz", "BAQ", 10.8896, -74.7808)
                     )
                 ),
                 _City(
@@ -158,7 +158,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Medellin", "MDE", listOf(
-                        _Airport("Jose Maria Cordova ", "MDE", 6.16454, -75.4231)
+                        _Airport("Jose Maria Cordova", "MDE", 6.16454, -75.4231)
                     )
                 )
             )
@@ -185,7 +185,7 @@ fun populateDatabase(database: MyDatabase) {
             "El Salvador", "SV", listOf(
                 _City(
                     "San Salvador", "SAL", listOf(
-                        _Airport("El Salvador ", "SAL", 13.4409, -89.055702)
+                        _Airport("El Salvador", "SAL", 13.4409, -89.055702)
                     )
                 )
             )
@@ -274,17 +274,17 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Allentown / Bethlehem, PA", "ABE", listOf(
-                        _Airport("Lehigh Valley ", "ABE", 40.652099609375, -75.44080352783203)
+                        _Airport("Lehigh Valley", "ABE", 40.652099609375, -75.44080352783203)
                     )
                 ),
                 _City(
                     "Amarillo, TX", "AMA", listOf(
-                        _Airport("Rick Husband ", "AMA", 35.219398, -101.706001)
+                        _Airport("Rick Husband", "AMA", 35.219398, -101.706001)
                     )
                 ),
                 _City(
                     "Anchorage, AK", "ANC", listOf(
-                        _Airport("Ted Stevens ", "ANC", 61.174400329589844, -149.99600219726562)
+                        _Airport("Ted Stevens", "ANC", 61.174400329589844, -149.99600219726562)
                     )
                 ),
                 _City(
@@ -309,17 +309,17 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Atlanta, GA", "ATL", listOf(
-                        _Airport("Hartsfield - Jackson ", "ATL", 33.6367, -84.428101)
+                        _Airport("Hartsfield - Jackson", "ATL", 33.6367, -84.428101)
                     )
                 ),
                 _City(
                     "Augusta, GA", "AGS", listOf(
-                        _Airport("Augusta Regional ", "AGS", 33.36989974975586, -81.9645004272461)
+                        _Airport("Augusta Regional", "AGS", 33.36989974975586, -81.9645004272461)
                     )
                 ),
                 _City(
                     "Austin, TX", "AUS", listOf(
-                        _Airport("Bergstrom ", "AUS", 30.194499969482422, -97.6698989868164)
+                        _Airport("Bergstrom", "AUS", 30.194499969482422, -97.6698989868164)
                     )
                 ),
                 _City(
@@ -339,7 +339,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Baton Rouge, LA", "BTR", listOf(
-                        _Airport("Metropolitan ", "BTR", 30.533199, -91.149597)
+                        _Airport("Metropolitan", "BTR", 30.533199, -91.149597)
                     )
                 ),
                 _City(
@@ -364,7 +364,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Birmingham, AL", "BHM", listOf(
-                        _Airport("Shuttlesworth ", "BHM", 33.56290054, -86.75350189)
+                        _Airport("Shuttlesworth", "BHM", 33.56290054, -86.75350189)
                     )
                 ),
                 _City(
@@ -374,7 +374,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Boise, ID", "BOI", listOf(
-                        _Airport("Air Terminal ", "BOI", 43.5644, -116.223)
+                        _Airport("Air Terminal", "BOI", 43.5644, -116.223)
                     )
                 ),
                 _City(
@@ -384,7 +384,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Bozeman, MT", "BZN", listOf(
-                        _Airport("Yellowstone ", "BZN", 45.77750015, -111.1529999)
+                        _Airport("Yellowstone", "BZN", 45.77750015, -111.1529999)
                     )
                 ),
                 _City(
@@ -394,7 +394,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Burbank, CA", "BUR", listOf(
-                        _Airport("Bob Hope ", "BUR", 34.20069885253906, -118.35900115966797)
+                        _Airport("Bob Hope", "BUR", 34.20069885253906, -118.35900115966797)
                     )
                 ),
                 _City(
@@ -404,7 +404,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Casper, WY", "CPR", listOf(
-                        _Airport("Natrona County ", "CPR", 42.90800095, -106.4639969)
+                        _Airport("Natrona County", "CPR", 42.90800095, -106.4639969)
                     )
                 ),
                 _City(
@@ -444,17 +444,17 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Chicago, IL", "CHI", listOf(
-                        _Airport("O'Hare ", "ORD", 41.9786, -87.9048)
+                        _Airport("O'Hare", "ORD", 41.9786, -87.9048)
                     )
                 ),
                 _City(
-                    "Chico, CA ", "CIC", listOf(
+                    "Chico, CA", "CIC", listOf(
                         _Airport("Municipal", "CIC", 39.79539871, -121.8580017)
                     )
                 ),
                 _City(
                     "Cincinnati, OH", "CVG", listOf(
-                        _Airport("Northern Kentucky ", "CVG", 39.0488014221, -84.6678009033)
+                        _Airport("Northern Kentucky", "CVG", 39.0488014221, -84.6678009033)
                     )
                 ),
                 _City(
@@ -549,7 +549,7 @@ fun populateDatabase(database: MyDatabase) {
                     )
                 ),
                 _City(
-                    "Durango, CO ", "DRO", listOf(
+                    "Durango, CO", "DRO", listOf(
                         _Airport("La Plata County", "DRO", 37.1515007019, -107.753997803)
                     )
                 ),
@@ -590,12 +590,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Fargo, ND", "FAR", listOf(
-                        _Airport("Hector ", "FAR", 46.92070007324219, -96.81580352783203)
+                        _Airport("Hector", "FAR", 46.92070007324219, -96.81580352783203)
                     )
                 ),
                 _City(
                     "Fayetteville, NC", "FAY", listOf(
-                        _Airport("Fayetteville Regional ", "FAY", 34.9911994934082, -78.88030242919922)
+                        _Airport("Fayetteville Regional", "FAY", 34.9911994934082, -78.88030242919922)
                     )
                 ),
                 _City(
@@ -605,7 +605,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Flint, MI", "FNT", listOf(
-                        _Airport("Bishop ", "FNT", 42.96540069580078, -83.74359893798828)
+                        _Airport("Bishop", "FNT", 42.96540069580078, -83.74359893798828)
                     )
                 ),
                 _City(
@@ -625,7 +625,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Fresno, CA", "FAT", listOf(
-                        _Airport("Yosemite ", "FAT", 36.77619934082031, -119.71800231933594)
+                        _Airport("Yosemite", "FAT", 36.77619934082031, -119.71800231933594)
                     )
                 ),
                 _City(
@@ -645,7 +645,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Grand Rapids, MI", "GRR", listOf(
-                        _Airport("Gerald R. Ford ", "GRR", 42.88079834, -85.52279663)
+                        _Airport("Gerald R. Ford", "GRR", 42.88079834, -85.52279663)
                     )
                 ),
                 _City(
@@ -655,12 +655,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Green Bay, WI", "GRB", listOf(
-                        _Airport("Austin Straubel ", "GRB", 44.48509979248047, -88.12960052490234)
+                        _Airport("Austin Straubel", "GRB", 44.48509979248047, -88.12960052490234)
                     )
                 ),
                 _City(
                     "Greensboro / High Point, NC", "GSO", listOf(
-                        _Airport("Piedmont Triad ", "GSO", 36.097801208496094, -79.93730163574219)
+                        _Airport("Piedmont Triad", "GSO", 36.097801208496094, -79.93730163574219)
                     )
                 ),
                 _City(
@@ -669,23 +669,23 @@ fun populateDatabase(database: MyDatabase) {
                     )
                 ),
                 _City(
-                    "Gulfport / Biloxi, MS ", "GPT", listOf(
+                    "Gulfport / Biloxi, MS", "GPT", listOf(
                         _Airport("Biloxi Regional", "GPT", 30.40730094909668, -89.07009887695312)
                     )
                 ),
                 _City(
                     "Gunnison, CO", "GUC", listOf(
-                        _Airport("Crested Butte Regional ", "GUC", 38.53390121, -106.9329987)
+                        _Airport("Crested Butte Regional", "GUC", 38.53390121, -106.9329987)
                     )
                 ),
                 _City(
-                    "Hancock, MI ", "CMX", listOf(
-                        _Airport("Houghton County Meml ", "CMX", 47.168399810791016, -88.48909759521484)
+                    "Hancock, MI", "CMX", listOf(
+                        _Airport("Houghton County Meml", "CMX", 47.168399810791016, -88.48909759521484)
                     )
                 ),
                 _City(
                     "Harlingen, TX", "HRL", listOf(
-                        _Airport("Valley ", "HRL", 26.228500366210938, -97.65440368652344)
+                        _Airport("Valley", "HRL", 26.228500366210938, -97.65440368652344)
                     )
                 ),
                 _City(
@@ -710,7 +710,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Helena, MT", "HLN", listOf(
-                        _Airport("Helena Regional ", "HLN", 46.6068000793457, -111.98300170898438)
+                        _Airport("Helena Regional", "HLN", 46.6068000793457, -111.98300170898438)
                     )
                 ),
                 _City(
@@ -800,7 +800,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Lihue, HI", "LIH", listOf(
-                        _Airport("Kauai ", "LIH", 21.97599983215332, -159.33900451660156)
+                        _Airport("Kauai", "LIH", 21.97599983215332, -159.33900451660156)
                     )
                 ),
                 _City(
@@ -835,7 +835,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Lanai City, HI", "LNY", listOf(
-                        _Airport("Lanai ", "LNY", 20.785600662231445, -156.9510040283203)
+                        _Airport("Lanai", "LNY", 20.785600662231445, -156.9510040283203)
                     )
                 ),
                 _City(
@@ -855,7 +855,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Las Vegas, NV", "LAS", listOf(
-                        _Airport("McCarran ", "LAS", 36.08010101, -115.1520004)
+                        _Airport("McCarran", "LAS", 36.08010101, -115.1520004)
                     )
                 ),
                 _City(
@@ -875,7 +875,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Little Rock, AR", "LIT", listOf(
-                        _Airport("B. and H. Clinton Natl ", "LIT", 34.729400634799994, -92.2242965698)
+                        _Airport("B. and H. Clinton Natl", "LIT", 34.729400634799994, -92.2242965698)
                     )
                 ),
                 _City(
@@ -915,7 +915,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Medford, OR", "MFR", listOf(
-                        _Airport("Rogue Valley ", "MFR", 42.37419891357422, -122.87300109863281)
+                        _Airport("Rogue Valley", "MFR", 42.37419891357422, -122.87300109863281)
                     )
                 ),
                 _City(
@@ -935,7 +935,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Milwaukee, WI", "MKE", listOf(
-                        _Airport("Gen. Mitchell ", "MKE", 42.947200775146484, -87.89659881591797)
+                        _Airport("Gen. Mitchell", "MKE", 42.947200775146484, -87.89659881591797)
                     )
                 ),
                 _City(
@@ -965,7 +965,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Moline, IL", "MLI", listOf(
-                        _Airport("Quad City ", "MLI", 41.44850158691406, -90.50749969482422)
+                        _Airport("Quad City", "MLI", 41.44850158691406, -90.50749969482422)
                     )
                 ),
                 _City(
@@ -1010,7 +1010,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "New York, NJ", "NYC", listOf(
-                        _Airport("Newark Liberty Intl ", "EWR", 40.692501068115234, -74.168701171875)
+                        _Airport("Newark Liberty Intl", "EWR", 40.692501068115234, -74.168701171875)
                     )
                 ),
                 _City(
@@ -1080,7 +1080,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Phoenix, AZ", "PHX", listOf(
-                        _Airport("Sky Harbour ", "PHX", 33.43429946899414, -112.01200103759766)
+                        _Airport("Sky Harbour", "PHX", 33.43429946899414, -112.01200103759766)
                     )
                 ),
                 _City(
@@ -1125,7 +1125,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Reno, NV", "RNO", listOf(
-                        _Airport("Tahoe ", "RNO", 39.49909973144531, -119.76799774169922)
+                        _Airport("Tahoe", "RNO", 39.49909973144531, -119.76799774169922)
                     )
                 ),
                 _City(
@@ -1135,7 +1135,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Roanoke, VA", "ROA", listOf(
-                        _Airport("Roanoke Regional ", "ROA", 37.3255, -79.975403)
+                        _Airport("Roanoke Regional", "ROA", 37.3255, -79.975403)
                     )
                 ),
                 _City(
@@ -1145,7 +1145,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Rock Springs, WY", "RKS", listOf(
-                        _Airport("Sweetwater ", "RKS", 41.5942, -109.065001)
+                        _Airport("Sweetwater", "RKS", 41.5942, -109.065001)
                     )
                 ),
                 _City(
@@ -1185,7 +1185,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "San Luis Obispo, CA", "CSL", listOf(
-                        _Airport("San Luis County Regional ", "SBP", 35.236801147499996, -120.641998291)
+                        _Airport("San Luis County Regional", "SBP", 35.236801147499996, -120.641998291)
                     )
                 ),
                 _City(
@@ -1215,7 +1215,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Savannah, GA", "SAV", listOf(
-                        _Airport("Hilton Head ", "SAV", 32.12760162, -81.20210266)
+                        _Airport("Hilton Head", "SAV", 32.12760162, -81.20210266)
                     )
                 ),
                 _City(
@@ -1270,7 +1270,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Syracuse, NY", "SYR", listOf(
-                        _Airport("Hancock ", "SYR", 43.11119842529297, -76.1063003540039)
+                        _Airport("Hancock", "SYR", 43.11119842529297, -76.1063003540039)
                     )
                 ),
                 _City(
@@ -1290,7 +1290,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Traverse City, MI", "TVC", listOf(
-                        _Airport("Cherry Capital ", "TVC", 44.74140167236328, -85.58219909667969)
+                        _Airport("Cherry Capital", "TVC", 44.74140167236328, -85.58219909667969)
                     )
                 ),
                 _City(
@@ -1299,7 +1299,7 @@ fun populateDatabase(database: MyDatabase) {
                     )
                 ),
                 _City(
-                    "Tulsa, OK ", "TUL", listOf(
+                    "Tulsa, OK", "TUL", listOf(
                         _Airport("Tulsa Intl", "TUL", 36.19839859008789, -95.88809967041016)
                     )
                 ),
@@ -1310,7 +1310,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Valparaiso, FL", "VPS", listOf(
-                        _Airport("Destin–Fort Walton Beach ", "VPS", 30.4832, -86.525398)
+                        _Airport("Destin–Fort Walton Beach", "VPS", 30.4832, -86.525398)
                     )
                 ),
                 _City(
@@ -1326,7 +1326,7 @@ fun populateDatabase(database: MyDatabase) {
                 _City(
                     "Washington, DC", "WAS", listOf(
                         _Airport("Dulles", "IAD", 38.94449997, -77.45580292),
-                        _Airport("Ronald Reagan National ", "DCA", 38.8521, -77.037697)
+                        _Airport("Ronald Reagan National", "DCA", 38.8521, -77.037697)
                     )
                 ),
                 _City(
@@ -1379,72 +1379,72 @@ fun populateDatabase(database: MyDatabase) {
             "China", "CN", listOf(
                 _City(
                     "Changchun", "CGQ", listOf(
-                        _Airport("Longjia ", "CGQ", 43.9962005615, 125.684997559)
+                        _Airport("Longjia", "CGQ", 43.9962005615, 125.684997559)
                     )
                 ),
                 _City(
                     "Changsha", "CSX", listOf(
-                        _Airport("Huanghua ", "CSX", 28.189199447599997, 113.220001221)
+                        _Airport("Huanghua", "CSX", 28.189199447599997, 113.220001221)
                     )
                 ),
                 _City(
                     "Chengdu", "CTU", listOf(
-                        _Airport("Shuangliu ", "CTU", 30.578500747680664, 103.9469985961914)
+                        _Airport("Shuangliu", "CTU", 30.578500747680664, 103.9469985961914)
                     )
                 ),
                 _City(
                     "Chongqing", "CKG", listOf(
-                        _Airport("Jiangbei ", "CKG", 29.719200134277344, 106.64199829101562)
+                        _Airport("Jiangbei", "CKG", 29.719200134277344, 106.64199829101562)
                     )
                 ),
                 _City(
                     "Beijing", "BJS", listOf(
-                        _Airport("Capital ", "PEK", 40.080101013183594, 116.58499908447266)
+                        _Airport("Capital", "PEK", 40.080101013183594, 116.58499908447266)
                     )
                 ),
                 _City(
                     "Dalian", "DLC", listOf(
-                        _Airport("Zhoushuizi ", "DLC", 38.9656982421875, 121.53900146484375)
+                        _Airport("Zhoushuizi", "DLC", 38.9656982421875, 121.53900146484375)
                     )
                 ),
                 _City(
                     "Fuzhou", "FOC", listOf(
-                        _Airport("Changle ", "FOC", 25.935100555419922, 119.66300201416016)
+                        _Airport("Changle", "FOC", 25.935100555419922, 119.66300201416016)
                     )
                 ),
                 _City(
                     "Guangzhou", "CAN", listOf(
-                        _Airport("Baiyun ", "CAN", 23.39240074157715, 113.29900360107422)
+                        _Airport("Baiyun", "CAN", 23.39240074157715, 113.29900360107422)
                     )
                 ),
                 _City(
                     "Guilin", "KWL", listOf(
-                        _Airport("Liangjiang ", "KWL", 25.21809959411621, 110.03900146484375)
+                        _Airport("Liangjiang", "KWL", 25.21809959411621, 110.03900146484375)
                     )
                 ),
                 _City(
                     "Haikou", "HAK", listOf(
-                        _Airport("Meilan ", "HAK", 19.934900283813477, 110.45899963378906)
+                        _Airport("Meilan", "HAK", 19.934900283813477, 110.45899963378906)
                     )
                 ),
                 _City(
                     "Hangzhou", "HGH", listOf(
-                        _Airport("Xiaoshan ", "HGH", 30.22949981689453, 120.43399810791016)
+                        _Airport("Xiaoshan", "HGH", 30.22949981689453, 120.43399810791016)
                     )
                 ),
                 _City(
                     "Harbin", "HRB", listOf(
-                        _Airport("Taiping ", "HRB", 45.6234016418457, 126.25)
+                        _Airport("Taiping", "HRB", 45.6234016418457, 126.25)
                     )
                 ),
                 _City(
                     "Hefei", "HFE", listOf(
-                        _Airport("Xinqiao ", "HFE", 31.780000686645508, 117.2979965209961)
+                        _Airport("Xinqiao", "HFE", 31.780000686645508, 117.2979965209961)
                     )
                 ),
                 _City(
                     "Hohhot", "HET", listOf(
-                        _Airport("Baita ", "HET", 40.851398, 111.823997)
+                        _Airport("Baita", "HET", 40.851398, 111.823997)
                     )
                 ),
                 _City(
@@ -1454,17 +1454,17 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Jinan", "TNA", listOf(
-                        _Airport("Yaoqiang ", "TNA", 36.857200622558594, 117.21600341796875)
+                        _Airport("Yaoqiang", "TNA", 36.857200622558594, 117.21600341796875)
                     )
                 ),
                 _City(
                     "Kunming", "KMG", listOf(
-                        _Airport("Changshui ", "KMG", 25.1019444, 102.9291667)
+                        _Airport("Changshui", "KMG", 25.1019444, 102.9291667)
                     )
                 ),
                 _City(
                     "Lanzhou", "LHW", listOf(
-                        _Airport("Zhongchuan  ", "LHW", 36.5152015686, 103.620002747)
+                        _Airport("Zhongchuan ", "LHW", 36.5152015686, 103.620002747)
                     )
                 ),
                 _City(
@@ -1474,88 +1474,88 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Nanchang", "KHN", listOf(
-                        _Airport("Changbei ", "KHN", 28.864999771118164, 115.9000015258789)
+                        _Airport("Changbei", "KHN", 28.864999771118164, 115.9000015258789)
                     )
                 ),
                 _City(
                     "Nanjing", "NKG", listOf(
-                        _Airport("Lukou ", "NKG", 31.742000579833984, 118.86199951171875)
+                        _Airport("Lukou", "NKG", 31.742000579833984, 118.86199951171875)
                     )
                 ),
                 _City(
                     "Nanning", "NNG", listOf(
-                        _Airport("Wuxu ", "NNG", 22.608299255371094, 108.1719970703125)
+                        _Airport("Wuxu", "NNG", 22.608299255371094, 108.1719970703125)
                     )
                 ),
                 _City(
                     "Qingdao", "TAO", listOf(
-                        _Airport("Liuting ", "TAO", 36.2661018372, 120.374000549)
+                        _Airport("Liuting", "TAO", 36.2661018372, 120.374000549)
                     )
                 ),
                 _City(
                     "Sanya", "SYX", listOf(
-                        _Airport("Phoenix ", "SYX", 18.302900314331055, 109.41200256347656)
+                        _Airport("Phoenix", "SYX", 18.302900314331055, 109.41200256347656)
                     )
                 ),
                 _City(
                     "Shanghai", "SHA", listOf(
-                        _Airport("Hongqiao ", "SHA", 31.197900772094727, 121.33599853515625),
-                        _Airport("Pudong  ", "PVG", 31.143400192260742, 121.80500030517578)
+                        _Airport("Hongqiao", "SHA", 31.197900772094727, 121.33599853515625),
+                        _Airport("Pudong ", "PVG", 31.143400192260742, 121.80500030517578)
                     )
                 ),
                 _City(
                     "Shenyang", "SHE", listOf(
-                        _Airport("Taoxian ", "SHE", 41.639801025390625, 123.48300170898438)
+                        _Airport("Taoxian", "SHE", 41.639801025390625, 123.48300170898438)
                     )
                 ),
                 _City(
                     "Shenzhen", "SZX", listOf(
-                        _Airport("Bao An ", "SZX", 22.639299392700195, 113.81099700927734)
+                        _Airport("Bao An", "SZX", 22.639299392700195, 113.81099700927734)
                     )
                 ),
                 _City(
                     "Taiyuan", "TYN", listOf(
-                        _Airport("Wusu ", "TYN", 37.74689865112305, 112.62799835205078)
+                        _Airport("Wusu", "TYN", 37.74689865112305, 112.62799835205078)
                     )
                 ),
                 _City(
                     "Wenzhou", "WNZ", listOf(
-                        _Airport("Yongqiang ", "WNZ", 27.912201, 120.851997)
+                        _Airport("Yongqiang", "WNZ", 27.912201, 120.851997)
                     )
                 ),
                 _City(
                     "Wuhan", "WUH", listOf(
-                        _Airport("Tianhe ", "WUH", 30.7838, 114.208)
+                        _Airport("Tianhe", "WUH", 30.7838, 114.208)
                     )
                 ),
                 _City(
                     "Wuxi", "WUX", listOf(
-                        _Airport("Sunan Shuofang ", "WUX", 31.494400024399997, 120.429000854)
+                        _Airport("Sunan Shuofang", "WUX", 31.494400024399997, 120.429000854)
                     )
                 ),
                 _City(
                     "Xiamen", "XMN", listOf(
-                        _Airport("Gaoqi ", "XMN", 24.54400062561035, 118.12799835205078)
+                        _Airport("Gaoqi", "XMN", 24.54400062561035, 118.12799835205078)
                     )
                 ),
                 _City(
                     "Xi an", "SIA", listOf(
-                        _Airport("Xianyang ", "XIY", 34.447102, 108.751999)
+                        _Airport("Xianyang", "XIY", 34.447102, 108.751999)
                     )
                 ),
                 _City(
                     "Yantai", "YNT", listOf(
-                        _Airport("Penglai ", "YNT", 37.40169906616211, 121.37200164794922)
+                        _Airport("Penglai", "YNT", 37.40169906616211, 121.37200164794922)
                     )
                 ),
                 _City(
                     "Zhengzhou", "CGO", listOf(
-                        _Airport("Xinzheng ", "CGO", 34.519699096699995, 113.841003418)
+                        _Airport("Xinzheng", "CGO", 34.519699096699995, 113.841003418)
                     )
                 ),
                 _City(
                     "Zhuhai", "ZUH", listOf(
-                        _Airport("Sanzao ", "ZUH", 22.006399, 113.375999)
+                        _Airport("Sanzao", "ZUH", 22.006399, 113.375999)
                     )
                 )
             )
@@ -1573,7 +1573,7 @@ fun populateDatabase(database: MyDatabase) {
             "India", "IN", listOf(
                 _City(
                     "Bengaluru", "BLR", listOf(
-                        _Airport("Kempegowda ", "BLR", 13.1979, 77.706299)
+                        _Airport("Kempegowda", "BLR", 13.1979, 77.706299)
                     )
                 ),
                 _City(
@@ -1588,12 +1588,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Delhi", "DEL", listOf(
-                        _Airport("Indira Gandhi ", "DEL", 28.5665, 77.103104)
+                        _Airport("Indira Gandhi", "DEL", 28.5665, 77.103104)
                     )
                 ),
                 _City(
                     "Mumbai", "BOM", listOf(
-                        _Airport("Chhatrapati Shijavi ", "BOM", 19.0886993408, 72.8678970337)
+                        _Airport("Chhatrapati Shijavi", "BOM", 19.0886993408, 72.8678970337)
                     )
                 )
             )
@@ -1607,7 +1607,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Jakarta", "JKT", listOf(
-                        _Airport("Soekarno Hatta ", "CGK", -6.1255698204, 106.65599823)
+                        _Airport("Soekarno Hatta", "CGK", -6.1255698204, 106.65599823)
                     )
                 )
             )
@@ -1641,7 +1641,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Nagoya", "NGO", listOf(
-                        _Airport("Chubu Centrair ", "NGO", 34.8583984375, 136.80499267578125)
+                        _Airport("Chubu Centrair", "NGO", 34.8583984375, 136.80499267578125)
                     )
                 ),
                 _City(
@@ -1656,8 +1656,8 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Osaka", "OSA", listOf(
-                        _Airport("Itami ", "ITM", 34.785499572753906, 135.43800354003906),
-                        _Airport("Kansai ", "KIX", 34.42729949951172, 135.24400329589844)
+                        _Airport("Itami", "ITM", 34.785499572753906, 135.43800354003906),
+                        _Airport("Kansai", "KIX", 34.42729949951172, 135.24400329589844)
                     )
                 ),
                 _City(
@@ -1673,8 +1673,8 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Tokyo", "TYO", listOf(
-                        _Airport("Haneda ", "HND", 35.552299, 139.779999),
-                        _Airport("Narita ", "NRT", 35.7647018433, 140.386001587)
+                        _Airport("Haneda", "HND", 35.552299, 139.779999),
+                        _Airport("Narita", "NRT", 35.7647018433, 140.386001587)
                     )
                 ),
                 _City(
@@ -1688,13 +1688,13 @@ fun populateDatabase(database: MyDatabase) {
             "Korea", "KR", listOf(
                 _City(
                     "Busan", "PUS", listOf(
-                        _Airport("Gimhae ", "PUS", 35.1795005798, 128.93800354)
+                        _Airport("Gimhae", "PUS", 35.1795005798, 128.93800354)
                     )
                 ),
                 _City(
                     "Seoul", "SEL", listOf(
-                        _Airport("Gimpo ", "GMP", 37.5583, 126.791),
-                        _Airport("Incheon ", "ICN", 37.46910095214844, 126.45099639892578)
+                        _Airport("Gimpo", "GMP", 37.5583, 126.791),
+                        _Airport("Incheon", "ICN", 37.46910095214844, 126.45099639892578)
                     )
                 )
             )
@@ -1712,7 +1712,7 @@ fun populateDatabase(database: MyDatabase) {
             "Philippines", "PH", listOf(
                 _City(
                     "Manila", "MNL", listOf(
-                        _Airport("Ninoy Aquino ", "MNL", 14.5086, 121.019997)
+                        _Airport("Ninoy Aquino", "MNL", 14.5086, 121.019997)
                     )
                 )
             )
@@ -1735,7 +1735,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Taipei", "TPE", listOf(
-                        _Airport("Taoyuan ", "TPE", 25.0777, 121.233002),
+                        _Airport("Taoyuan", "TPE", 25.0777, 121.233002),
                         _Airport("Songshan", "TSA", 25.069400787353516, 121.552001953125)
                     )
                 )
@@ -1745,12 +1745,12 @@ fun populateDatabase(database: MyDatabase) {
             "Thailand", "TH", listOf(
                 _City(
                     "Bangkok", "BKK", listOf(
-                        _Airport("Suvarnabhumi ", "BKK", 13.681099891662598, 100.74700164794922)
+                        _Airport("Suvarnabhumi", "BKK", 13.681099891662598, 100.74700164794922)
                     )
                 ),
                 _City(
                     "Chiang Mai", "CNX", listOf(
-                        _Airport("Chiang Mai ", "CNX", 18.766799926799997, 98.962600708)
+                        _Airport("Chiang Mai", "CNX", 18.766799926799997, 98.962600708)
                     )
                 ),
                 _City(
@@ -1774,12 +1774,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Hanoi", "HAN", listOf(
-                        _Airport("No Bai ", "HAN", 21.221200942993164, 105.80699920654297)
+                        _Airport("No Bai", "HAN", 21.221200942993164, 105.80699920654297)
                     )
                 ),
                 _City(
                     "Ho Chi Minh City", "SGN", listOf(
-                        _Airport("Tan Son Nhat ", "SGN", 10.8187999725, 106.652000427)
+                        _Airport("Tan Son Nhat", "SGN", 10.8187999725, 106.652000427)
                     )
                 )
             )
@@ -1896,7 +1896,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Billund", "BLL", listOf(
-                        _Airport("Billund ", "BLL", 55.7402992249, 9.15178012848)
+                        _Airport("Billund", "BLL", 55.7402992249, 9.15178012848)
                     )
                 ),
                 _City(
@@ -2051,7 +2051,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Munich", "MUC", listOf(
-                        _Airport("Franz Josef Strauss ", "MUC", 48.353802, 11.7861)
+                        _Airport("Franz Josef Strauss", "MUC", 48.353802, 11.7861)
                     )
                 ),
                 _City(
@@ -2080,7 +2080,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Athens", "ATH", listOf(
-                        _Airport("E. Venizelos ", "ATH", 37.9364013672, 23.9444999695)
+                        _Airport("E. Venizelos", "ATH", 37.9364013672, 23.9444999695)
                     )
                 ),
                 _City(
@@ -2105,12 +2105,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Kavala", "KVA", listOf(
-                        _Airport("Megas Alexandros ", "KVA", 40.913299560546875, 24.619199752807617)
+                        _Airport("Megas Alexandros", "KVA", 40.913299560546875, 24.619199752807617)
                     )
                 ),
                 _City(
                     "Kefallinia", "EFL", listOf(
-                        _Airport("Anna Pollatou ", "EFL", 38.12009811401367, 20.500499725341797)
+                        _Airport("Anna Pollatou", "EFL", 38.12009811401367, 20.500499725341797)
                     )
                 ),
                 _City(
@@ -2130,7 +2130,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Mykonos", "JMK", listOf(
-                        _Airport("National Dilos ", "JMK", 37.43510055541992, 25.348100662231445)
+                        _Airport("National Dilos", "JMK", 37.43510055541992, 25.348100662231445)
                     )
                 ),
                 _City(
@@ -2164,7 +2164,7 @@ fun populateDatabase(database: MyDatabase) {
             "Hungary", "HU", listOf(
                 _City(
                     "Budapest", "BUD", listOf(
-                        _Airport("Ferenc Liszt  ", "BUD", 47.42976, 19.261093)
+                        _Airport("Ferenc Liszt ", "BUD", 47.42976, 19.261093)
                     )
                 )
             )
@@ -2173,7 +2173,7 @@ fun populateDatabase(database: MyDatabase) {
             "Iceland", "IS", listOf(
                 _City(
                     "Reykjavik", "REK", listOf(
-                        _Airport("Keflavik ", "KEF", 63.985000610352, -22.605600357056)
+                        _Airport("Keflavik", "KEF", 63.985000610352, -22.605600357056)
                     )
                 )
             )
@@ -2182,7 +2182,7 @@ fun populateDatabase(database: MyDatabase) {
             "Ireland", "IE", listOf(
                 _City(
                     "Cork", "ORK", listOf(
-                        _Airport("Cork ", "ORK", 51.84130096435547, -8.491109848022461)
+                        _Airport("Cork", "ORK", 51.84130096435547, -8.491109848022461)
                     )
                 ),
                 _City(
@@ -2211,7 +2211,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Bologna", "BLQ", listOf(
-                        _Airport("Guglielmo Marconi ", "BLQ", 44.5354, 11.2887)
+                        _Airport("Guglielmo Marconi", "BLQ", 44.5354, 11.2887)
                     )
                 ),
                 _City(
@@ -2221,7 +2221,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Catania, Sicilien", "CTA", listOf(
-                        _Airport("Fontanarossa Intl V. Bellini ", "CTA", 37.466801, 15.0664)
+                        _Airport("Fontanarossa Intl V. Bellini", "CTA", 37.466801, 15.0664)
                     )
                 ),
                 _City(
@@ -2231,7 +2231,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Genoa", "GOA", listOf(
-                        _Airport("Colombo ", "GOA", 44.4133, 8.8375)
+                        _Airport("Colombo", "GOA", 44.4133, 8.8375)
                     )
                 ),
                 _City(
@@ -2247,17 +2247,17 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Olbia Sardinia", "OLB", listOf(
-                        _Airport("Costa Smeralda ", "OLB", 40.898701, 9.51763)
+                        _Airport("Costa Smeralda", "OLB", 40.898701, 9.51763)
                     )
                 ),
                 _City(
                     "Palermo Sicily", "PMO", listOf(
-                        _Airport("Falcone–Borsellino ", "PMO", 38.175999, 13.091)
+                        _Airport("Falcone–Borsellino", "PMO", 38.175999, 13.091)
                     )
                 ),
                 _City(
                     "Pisa", "PSA", listOf(
-                        _Airport("Galileo Galilei ", "PSA", 43.683899, 10.3927)
+                        _Airport("Galileo Galilei", "PSA", 43.683899, 10.3927)
                     )
                 ),
                 _City(
@@ -2267,22 +2267,22 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Trieste", "TRS", listOf(
-                        _Airport("Friuli Venezia Giulia ", "TRS", 45.827499, 13.4722)
+                        _Airport("Friuli Venezia Giulia", "TRS", 45.827499, 13.4722)
                     )
                 ),
                 _City(
                     "Turin", "TRN", listOf(
-                        _Airport("Caselle Sandro Pertini ", "TRN", 45.200802, 7.64963)
+                        _Airport("Caselle Sandro Pertini", "TRN", 45.200802, 7.64963)
                     )
                 ),
                 _City(
                     "Venice", "VCE", listOf(
-                        _Airport("Marco Polo ", "VCE", 45.505299, 12.3519)
+                        _Airport("Marco Polo", "VCE", 45.505299, 12.3519)
                     )
                 ),
                 _City(
                     "Verona", "VRN", listOf(
-                        _Airport("Villafranca V. Catullo ", "VRN", 45.395699, 10.8885)
+                        _Airport("Villafranca V. Catullo", "VRN", 45.395699, 10.8885)
                     )
                 )
             )
@@ -2318,7 +2318,7 @@ fun populateDatabase(database: MyDatabase) {
             "Lithuania", "LT", listOf(
                 _City(
                     "Palanga / Klaipeda", "PLQ", listOf(
-                        _Airport("Palanga / Klaipeda Intl ", "PLQ", 55.973201751708984, 21.093900680541992)
+                        _Airport("Palanga / Klaipeda Intl", "PLQ", 55.973201751708984, 21.093900680541992)
                     )
                 ),
                 _City(
@@ -2368,7 +2368,7 @@ fun populateDatabase(database: MyDatabase) {
             "Netherlands", "NL", listOf(
                 _City(
                     "Amsterdam", "AMS", listOf(
-                        _Airport("Schiphol ", "AMS", 52.308601, 4.76389)
+                        _Airport("Schiphol", "AMS", 52.308601, 4.76389)
                     )
                 ),
                 _City(
@@ -2426,8 +2426,8 @@ fun populateDatabase(database: MyDatabase) {
                     )
                 ),
                 _City(
-                    "Floro", "FRO", listOf(
-                        _Airport("Floro", "FRO", 61.583599090576, 5.0247201919556)
+                    "Florø", "FRO", listOf(
+                        _Airport("Florø", "FRO", 61.583599090576, 5.0247201919556)
                     )
                 ),
                 _City(
@@ -2522,7 +2522,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Oslo", "OSL", listOf(
-                        _Airport("Gardermoen ", "OSL", 60.193901062012, 11.100399971008)
+                        _Airport("Gardermoen", "OSL", 60.193901062012, 11.100399971008)
                     )
                 ),
                 _City(
@@ -2582,7 +2582,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Sandefjord", "TRF", listOf(
-                        _Airport("Torp ", "TRF", 59.1866989136, 10.258600235)
+                        _Airport("Torp", "TRF", 59.1866989136, 10.258600235)
                     )
                 ),
                 _City(
@@ -2616,12 +2616,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Krakow", "KRK", listOf(
-                        _Airport("Balice John Paul II ", "KRK", 50.077702, 19.7848)
+                        _Airport("Balice John Paul II", "KRK", 50.077702, 19.7848)
                     )
                 ),
                 _City(
                     "Poznan", "POZ", listOf(
-                        _Airport("Lawica H. Wieniawski ", "POZ", 52.421001434299995, 16.8262996674)
+                        _Airport("Lawica H. Wieniawski", "POZ", 52.421001434299995, 16.8262996674)
                     )
                 ),
                 _City(
@@ -2650,17 +2650,17 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Lisbon", "LIS", listOf(
-                        _Airport("Humberto Delgado ", "LIS", 38.7813, -9.13592)
+                        _Airport("Humberto Delgado", "LIS", 38.7813, -9.13592)
                     )
                 ),
                 _City(
                     "Funchal Madeira", "FNC", listOf(
-                        _Airport("C. Ronaldo Madeira ", "FNC", 32.697899, -16.7745)
+                        _Airport("C. Ronaldo Madeira", "FNC", 32.697899, -16.7745)
                     )
                 ),
                 _City(
                     "Porto", "OPO", listOf(
-                        _Airport("Francisco Sa Carneiro ", "OPO", 41.2481002808, -8.68138980865)
+                        _Airport("Francisco Sa Carneiro", "OPO", 41.2481002808, -8.68138980865)
                     )
                 )
             )
@@ -2669,7 +2669,7 @@ fun populateDatabase(database: MyDatabase) {
             "Romania", "RO", listOf(
                 _City(
                     "Bucharest", "BUH", listOf(
-                        _Airport("Henri Coanda ", "OTP", 44.5711111, 26.085)
+                        _Airport("Henri Coanda", "OTP", 44.5711111, 26.085)
                     )
                 )
             )
@@ -2715,7 +2715,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Fuerteventura", "FUE", listOf(
-                        _Airport("El Matorral ", "FUE", 28.452699661254883, -13.863800048828125)
+                        _Airport("El Matorral", "FUE", 28.452699661254883, -13.863800048828125)
                     )
                 ),
                 _City(
@@ -2725,7 +2725,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Barcelona", "BCN", listOf(
-                        _Airport("El Prat ", "BCN", 41.2971, 2.07846)
+                        _Airport("El Prat", "BCN", 41.2971, 2.07846)
                     )
                 ),
                 _City(
@@ -2735,12 +2735,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Madrid", "MAD", listOf(
-                        _Airport("Barajas Adolfo Suarez ", "MAD", 40.471926, -3.56264)
+                        _Airport("Barajas Adolfo Suarez", "MAD", 40.471926, -3.56264)
                     )
                 ),
                 _City(
                     "Malaga", "AGP", listOf(
-                        _Airport("Costa del Sol  ", "AGP", 36.67490005493164, -4.499110221862793)
+                        _Airport("Costa del Sol ", "AGP", 36.67490005493164, -4.499110221862793)
                     )
                 ),
                 _City(
@@ -2764,7 +2764,7 @@ fun populateDatabase(database: MyDatabase) {
             "Sweden", "SE", listOf(
                 _City(
                     "Angelholm / Helsingborg", "AGH", listOf(
-                        _Airport("Angelholm ", "AGH", 56.29610061645508, 12.847100257873535)
+                        _Airport("Angelholm", "AGH", 56.29610061645508, 12.847100257873535)
                     )
                 ),
                 _City(
@@ -2809,7 +2809,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Are / Ostersund", "OSD", listOf(
-                        _Airport("Are / Ostersund ", "OSD", 63.194400787354, 14.50030040741)
+                        _Airport("Are / Ostersund", "OSD", 63.194400787354, 14.50030040741)
                     )
                 ),
                 _City(
@@ -2829,7 +2829,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Sundsvall / Timrå", "SDL", listOf(
-                        _Airport("Sundsvall / Timra ", "SDL", 62.528099060058594, 17.443899154663086)
+                        _Airport("Sundsvall / Timra", "SDL", 62.528099060058594, 17.443899154663086)
                     )
                 ),
                 _City(
@@ -2877,12 +2877,12 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Antalya", "AYT", listOf(
-                        _Airport("Antalya ", "AYT", 36.898701, 30.800501)
+                        _Airport("Antalya", "AYT", 36.898701, 30.800501)
                     )
                 ),
                 _City(
                     "Bodrum", "BXN", listOf(
-                        _Airport("Milas ", "BJV", 37.25059890749999, 27.6643009186)
+                        _Airport("Milas", "BJV", 37.25059890749999, 27.6643009186)
                     )
                 ),
                 _City(
@@ -2929,7 +2929,7 @@ fun populateDatabase(database: MyDatabase) {
                     )
                 ),
                 _City(
-                    "Belfast ", "BFS", listOf(
+                    "Belfast", "BFS", listOf(
                         _Airport("G. Best City Airport", "BHD", 54.618099212646484, -5.872499942779541)
                     )
                 ),
@@ -3018,7 +3018,7 @@ fun populateDatabase(database: MyDatabase) {
             "Ethiopia", "ET", listOf(
                 _City(
                     "Addis Ababa", "ADD", listOf(
-                        _Airport("Bole  ", "ADD", 8.97789001465, 38.799301147499996)
+                        _Airport("Bole ", "ADD", 8.97789001465, 38.799301147499996)
                     )
                 )
             )
@@ -3074,7 +3074,7 @@ fun populateDatabase(database: MyDatabase) {
                 ),
                 _City(
                     "Johannesburg", "JNB", listOf(
-                        _Airport("O. R. Tambo ", "JNB", -26.1392, 28.246)
+                        _Airport("O. R. Tambo", "JNB", -26.1392, 28.246)
                     )
                 )
             )

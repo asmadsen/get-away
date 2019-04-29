@@ -32,10 +32,13 @@ interface AirportDao {
     fun getNearestByName(name: String, latitude: Double, longitude: Double, fudge: Double): Single<List<Airport>>
 
     @Query("SELECT * from airports WHERE name LIKE '%' || :name || '%' LIMIT 20")
-    fun getByName(name: String): List<Airport>
+    fun getByName(name: String): Single<List<Airport>>
 
     @Query("SELECT * from airports WHERE id = :id LIMIT 1")
     fun findById(id : Int) : Airport?
+
+    @Query("SELECT * FROM airports ORDER BY RANDOM() LIMIT 1")
+    fun findRandomAirport(): Single<Airport>
 
     @Delete
     fun delete(vararg airports: Airport)

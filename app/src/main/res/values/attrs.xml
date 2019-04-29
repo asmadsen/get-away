@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChooseAirportView">
+        <attr name="search" format="string" />
+        <attr name="airportName" format="string" />
+        <attr name="airportCity" format="string" />
+        <attr name="airportIata" format="string" />
+        <attr name="editable" format="boolean" />
+    </declare-styleable>
+</resources>

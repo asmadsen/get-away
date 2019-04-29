@@ -1,0 +1,19 @@
+@startuml
+hide methods
+
+class Code
+
+object MutableLiveData {
+    value: T
+}
+
+class View << (V,a) >>
+
+Code -right-> MutableLiveData
+MutableLiveData -left-> Code
+
+View -left-> MutableLiveData
+MutableLiveData -right-> View
+
+
+@enduml

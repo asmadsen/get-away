@@ -16,21 +16,15 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.landing_fragment.*
-import kotlinx.android.synthetic.main.view_choose_airport.*
 import no.asmadsen.getaway.databinding.LandingFragmentBinding
 import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 
 
 class Landing : Fragment() {
 
-    companion object {
-        fun newInstance() = Landing()
-    }
-
-    val viewModel: ApplicationViewModel by sharedViewModel()
-
-    val chooseYourAirportCollapsed = MutableLiveData<Boolean>().apply { value = true }
+    private val viewModel: ApplicationViewModel by sharedViewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,35 +34,25 @@ class Landing : Fragment() {
         val binding =
             DataBindingUtil.inflate<LandingFragmentBinding>(inflater, R.layout.landing_fragment, container, false)
         binding.lifecycleOwner = this
-        binding.airportName = viewModel.airport
+        binding.airport = viewModel.airport
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         this.btn_point_on_map.setOnClickListener {
+            if (viewModel.airport.value == null) {
+                Snackbar.make(view, resources.getString(R.string.explain_missing_airport), Snackbar.LENGTH_LONG)
+                    .setAction(R.string.tell_me_more) {
+                        setSelectedAirportToLatestKnownLocation()
+                    }
+                    .show()
+                return@setOnClickListener
+            }
             findNavController().navigate(R.id.action_landing_to_map)
         }
 
-        if (checkSelfPermission(
-                activity!!,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 2)
-        } else {
-            val locationManager = getSystemService(context!!.applicationContext, LocationManager::class.java)
-
-            locationManager?.let {
-                val location = it.getLastKnownLocation(LocationManager.GPS_PROVIDER)
-                viewModel.userLocation.postValue(location)
-            }
-        }
-
-        editTextYourAirport.setOnTouchListener { _, event ->
-            chooseAirportView.onTouchEvent(event)
-            false
-        }
+        setSelectedAirportToLatestKnownLocation()
 
         chooseAirportView.setOnClickListener {
             val extras = FragmentNavigatorExtras(
@@ -78,10 +62,41 @@ class Landing : Fragment() {
         }
     }
 
+    private fun setSelectedAirportToLatestKnownLocation() {
+        if (checkSelfPermission(
+                activity!!,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            if (shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_FINE_LOCATION)) {
+                banner.setLeftButtonListener { it.dismiss() }
+                banner.setRightButtonListener {
+                    requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_FINE_LOCATION)
+                    it.dismiss()
+                }
+                banner.show()
+            } else {
+                requestPermissions(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_FINE_LOCATION)
+            }
+        } else {
+            val locationManager = getSystemService(context!!.applicationContext, LocationManager::class.java)
+
+            locationManager?.let {
+                val location = it.getLastKnownLocation(LocationManager.GPS_PROVIDER)
+                viewModel.userLocation.postValue(location)
+                if (viewModel.airport.value == null) {
+                    viewModel.getNearestAirport(location.latitude, location.longitude).subscribe { airport ->
+                        viewModel.airport.postValue(airport)
+                    }
+                }
+            }
+        }
+    }
+
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
-            2 -> {
+            REQUEST_FINE_LOCATION -> {
                 if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
                     if (checkSelfPermission(
                             activity!!,
@@ -89,18 +104,8 @@ class Landing : Fragment() {
                         ) != PackageManager.PERMISSION_GRANTED
                     ) {
                     } else {
-                        val locationManager =
-                            getSystemService(context!!.applicationContext, LocationManager::class.java)
-
-                        locationManager?.let {
-                            val location = it.getLastKnownLocation(LocationManager.GPS_PROVIDER)
-
-                            viewModel.userLocation.postValue(location)
-                        }
+                        setSelectedAirportToLatestKnownLocation()
                     }
-                } else {
-                    // permission denied, boo! Disable the
-                    // functionality that depends on this permission.
                 }
                 return
             }

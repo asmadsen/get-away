@@ -14,4 +14,28 @@
         android:layout_height="match_parent" />
 
     <include layout="@layout/map_bottom_sheet_fragment" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/helpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_question"
+        app:backgroundTint="#FFFFFF"
+        app:elevation="10dp"
+        app:fabSize="mini"
+        app:layout_anchor="@+id/frg"
+        app:layout_anchorGravity="end|top" />
+
+    <com.sergivonavi.materialbanner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:elevation="20dp"
+        app:buttonRightText="@string/dismiss"
+        app:icon="@drawable/ic_question"
+        app:messageText="@string/help_map" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

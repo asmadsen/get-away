@@ -10,18 +10,24 @@ import io.reactivex.schedulers.Schedulers
 import no.asmadsen.getaway.room.entities.Airport
 import no.asmadsen.getaway.room.entities.AirportWithCityAndDistance
 import no.asmadsen.getaway.repositories.AirportRepository
+import no.asmadsen.getaway.room.entities.AirportWithCity
+import no.asmadsen.getaway.room.entities.City
 import org.jetbrains.anko.doAsync
 
 class ApplicationViewModel(application: Application, private val airportRepository: AirportRepository) : AndroidViewModel(application) {
     val airports = MutableLiveData<List<Airport>>()
-    val airport = MutableLiveData<String>()
+    val airport = MutableLiveData<AirportWithCity>()
     val userLocation = MutableLiveData<Location>()
 
-    init {
-        doAsync {
-            val dbAirports = MyDatabase.getDatabase(application).airportDao().getAll()
-            airports.postValue(dbAirports)
+    fun getAirports(name: String?): Single<List<AirportWithCity>> {
+        if (!name.isNullOrBlank() && name.length > 2) {
+            return airportRepository.getAirportsByName(name)
+                .subscribeOn(Schedulers.computation())
+                .observeOn(AndroidSchedulers.mainThread())
         }
+        return airportRepository.getAirportsByName("")
+            .subscribeOn(Schedulers.computation())
+            .observeOn(AndroidSchedulers.mainThread())
     }
 
     fun getNearestAirports(name: String? = null, latitude: Double, longitude: Double): Single<List<AirportWithCityAndDistance>> {
@@ -33,5 +39,10 @@ class ApplicationViewModel(application: Application, private val airportReposito
         return airportRepository.getNearestWithCity(latitude, longitude)
             .subscribeOn(Schedulers.computation())
             .observeOn(AndroidSchedulers.mainThread())
+    }
+
+    fun getNearestAirport(latitude: Double, longitude: Double): Single<AirportWithCityAndDistance> {
+        return getNearestAirports(null, latitude, longitude)
+            .map { airports -> airports.first() }
     }
 }

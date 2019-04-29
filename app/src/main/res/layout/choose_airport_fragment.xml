@@ -5,9 +5,13 @@
 
     <data>
         <import type="androidx.lifecycle.MutableLiveData" />
+        <import type="no.asmadsen.getaway.room.entities.AirportWithCity" />
         <variable
             name="airportName"
             type="MutableLiveData&lt;String>" />
+        <variable
+            name="airport"
+            type="MutableLiveData&lt;AirportWithCity>" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,17 +19,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ChooseAirport">
-
-        <include
-            android:id="@+id/include"
-            layout="@layout/view_choose_airport"
+        <no.asmadsen.getaway.widgets.ChooseAirportView
+            android:id="@+id/chooseAirportView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:airportName="@={airportName}"
-            app:collapsed="@{false}"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:transitionName="chooseAirportView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:editable="true"
+            app:search="@={ airportName }"
+            app:airportName="@{ airport.name ?? `` }"
+            app:airportIata="@{ airport.iata ?? `` }"
+            app:airportCity="@{ airport.city.name ?? `` }"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/chooseAirportRecyclerView"
@@ -34,7 +43,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/include"
+            app:layout_constraintTop_toBottomOf="@id/chooseAirportView"
             tools:listitem="@layout/airport_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

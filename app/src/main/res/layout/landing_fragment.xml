@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="androidx.lifecycle.MutableLiveData" />
+        <import type="androidx.lifecycle.LiveData" />
+        <import type="no.asmadsen.getaway.room.entities.AirportWithCity" />
         <variable
-            name="airportName"
-            type="MutableLiveData&lt;String>" />
+            name="airport"
+            type="LiveData&lt;AirportWithCity>" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,6 +17,20 @@
         android:layout_height="match_parent"
         tools:context=".Landing">
 
+        <com.sergivonavi.materialbanner.Banner
+            android:id="@+id/banner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            android:visibility="gone"
+            app:buttonLeftText="@string/dismiss"
+            app:buttonRightText="@string/give_permission"
+            app:icon="@drawable/ic_location_circle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:messageText="@string/explain_permission" />
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
@@ -23,14 +38,19 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:background="@drawable/icon_background"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_map"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
@@ -38,13 +58,41 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/departureAirport"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+            <no.asmadsen.getaway.widgets.ChooseAirportView
+                android:id="@+id/chooseAirportView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:transitionName="chooseAirportView"
+                app:airportCity="@{ airport.city.name ?? `` }"
+                app:airportIata="@{ airport.iata ?? `` }"
+                app:airportName="@{ airport.name ?? `` }"
+                app:editable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <Button
                 android:id="@+id/btn_point_on_map"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
@@ -53,20 +101,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
         </LinearLayout>
-
-        <include
-            layout="@layout/view_choose_airport"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:elevation="4dp"
-            app:collapsed="@{true}"
-            app:airportName="@={airportName}"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

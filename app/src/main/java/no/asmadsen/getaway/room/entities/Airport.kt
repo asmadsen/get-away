@@ -36,13 +36,25 @@ class AirportWithDistance(
     val distance: Float
 )
 
-class AirportWithCityAndDistance(
+open class AirportWithCity(
     val id: Long,
     val name: String,
     val iata: String,
     val cityId: Long,
     val city: City,
     val latitude: Double,
-    val longitude: Double,
-    val distance: Float
+    val longitude: Double
 )
+
+class AirportWithCityAndDistance(
+    id: Long,
+    name: String,
+    iata: String,
+    cityId: Long,
+    city: City,
+    latitude: Double,
+    longitude: Double,
+    val distance: Float
+) : AirportWithCity(id, name, iata, cityId, city, latitude, longitude)
+
+

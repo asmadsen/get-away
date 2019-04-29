@@ -7,7 +7,7 @@
         android:id="@+id/airportItemLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_choose_airport_expanded">
+        android:background="?attr/selectableItemBackground">
 
         <TextView
             android:id="@+id/airportName"
@@ -47,5 +47,17 @@
             app:layout_constraintBottom_toTopOf="@+id/airportName"
             app:layout_constraintStart_toEndOf="@+id/airportIata"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/distanceFromLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="30km"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
