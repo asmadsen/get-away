@@ -80,6 +80,46 @@ Anko is a small utility library for developing android apps in Kotlin, and is ma
 
 ### Start screen
 
-![Start screen]()
+![Start screen](screenshots/Screenshot_20190429-201207.png)
 
 <div class="page-break"></div>
+
+### Rationale for location permission
+
+![Rationale for location permission](screenshots/Screenshot_20190429-201321.png)
+
+<div class="page-break"></div>
+
+### Airport search
+
+![Airport search](screenshots/Screenshot_20190429-201347.png)
+
+<div class="page-break"></div>
+
+### Warning when not selected airport
+
+![Warning when not selected airport](screenshots/Screenshot_20190429-201312.png)
+
+<div class="page-break"></div>
+
+### Map view
+
+![Map view](screenshots/Screenshot_20190429-201357.png)
+
+<div class="page-break"></div>
+
+### Info banner - Map view
+
+![Info banner](screenshots/Screenshot_20190429-201405.png)
+
+<div class="page-break"></div>
+
+### Selected airport - Map view
+
+![Selected airport](screenshots/Screenshot_20190429-201413.png)
+
+<div class="page-break"></div>
+
+### Selected airport expanded - Map view
+
+![Selected airport expanded](screenshots/Screenshot_20190429-201422.png)

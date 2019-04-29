@@ -4,7 +4,6 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.location.LocationManager
 import android.os.Bundle
-import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,8 +11,6 @@ import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.core.content.ContextCompat.getSystemService
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Observer
 import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
@@ -47,9 +44,7 @@ class Landing : Fragment() {
                         setSelectedAirportToLatestKnownLocation()
                     }
                     .show()
-                return@setOnClickListener
-            }
-            findNavController().navigate(R.id.action_landing_to_map)
+            } else findNavController().navigate(R.id.action_landing_to_map)
         }
 
         setSelectedAirportToLatestKnownLocation()
