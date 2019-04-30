@@ -1,5 +1,9 @@
 # GetAway
 
+## Focus
+
+As one with more development experience than most(in class), I have focused a lot with finding more challenging ways to implement features. I'm also of the option that the development field is so fast paced, that learning anything other that the latest best practises is often useless as it will have changed multiple times by the time one gets to put the knowledge to use. Therefore I have tried to use a lot of the utilities provided by Google in [Jetpack](https://developer.android.com/jetpack) as well as using the libraries used in real life when applicable such as with RxKotlin for example.
+
 ## Concept
 
 The concept of this app is to make it easier to explore, by giving the user ability to point on a map and have the nearest airport with an price estimate showing up.
@@ -10,13 +14,33 @@ The concept of this app is to make it easier to explore, by giving the user abil
 
 The app screens is made using only Fragments utilizing the Navigation Component for handling the navigation between screens. Most of the Fragments also utilizes DataBinding.
 
-Navigation Component is mainly used to not have to use FragmentTransactions which is very error-prone, and it gives an easy way to define screens and the transactions between each of the screens. It also provides a type-safe way of accepting arguments when transitioning. 
+Navigation Component is mainly used to not have to use FragmentTransactions which is very error-prone, and it gives an easy way to define screens and the transactions between each of the screens. It also provides a type-safe way of accepting arguments when transitioning.
 
 ![Navigation graph](puml/nav_graph.png)
 
+#### Transitions
+
+I have in some parts tried to experiment with some transitions. However it has proven to be not an easy feat, however I got it to work somewhat in two places when pressing the "Search for airport" button, and when sliding the BottomSheet in the map-view.
+
 ### Custom Widget
 
-The widget showing the chosen airport and for searching for airports, is a custom View. Which encapsulates the behaviour of enabling and disabling the EditText, and the fact that if you start searching the labels for IATA code and city name is hidden and visible. 
+The widget showing the chosen airport and for searching for airports, is a custom View. Which encapsulates the behaviour of enabling and disabling the EditText, and the fact that if you start searching the labels for IATA code and city name is hidden and visible.
+
+## External service
+
+### SAS
+
+Sas does kind of not really have it's own api, the endpoints that I'm using is found by looking at the network calls on their new website. To use another company's "internal"-apis would usually not be a good idea, and if I where to publish the app I would consult with Sas about using their apis. However as an educational project I think it was cool to dig through a website to figure out how to use the api by watching it being used rather than reading some documentation.
+
+### Flickr
+
+I use Flickr's API to find pictures from around the destination airport, by using the latitude and longitude. As well as some tags for when the position gives too few results. Using Flickr isn't really my first choice when coming to photo api's, however it was the only one that had the possibility to search by position.
+
+## Improvements
+
+In the future there is some improvements I would like to do in the application. For example in the BottomSheet in the map-view, the images loaded from Flickr will sometimes disappear and reappear when scrolling causing the images to rearrange.
+
+It would also be cool to allow the user to specify their travel period more specifically, maybe even down to specific days. And add the possibility to get different price estimates for other passenger types that Adults.
 
 ## Dependencies
 
@@ -54,7 +78,7 @@ ViewModels does not do much in itself, but the concept is that it holds the data
 
 ### Third-party libraries
 
-In modern programming you will rarely not use any third-party libraries, and Android development is no exception. In this project I might be using more advanced libraries than necessary for an app of this scope. However of the libraries most enables certain features not present in any utilities provided by Google.
+In modern programming you will rarely not use any third-party libraries, and Android development is no exception. In this project I might be using more advanced libraries than necessary for an app of this scope. However of the libraries most enables certain features not present in any utilities provided by Google as a part of it's featured set of tools.
 
 In this project I'm using [RxKotlin](https://github.com/ReactiveX/RxKotlin), [RxRecyclerAdapted](https://github.com/ahmedrizwan/RxRecyclerAdapter), [Insert-Koin](https://insert-koin.io/), [Gson](https://github.com/google/gson), [Picasso](http://square.github.io/picasso/), [Retrofit](https://square.github.io/retrofit/), and [Anko](https://github.com/Kotlin/anko).
 
@@ -71,6 +95,20 @@ RxRecyclerAdapter is again a fairly simple library, it uses RxKotlin and DataBin
 #### Insert-Koin 
 
 Insert-Koin is a dependency-injection library made for Kotlin, it manages dependencies across modules as every other dependency-injection library. This is usually not used in so small and simple apps, but I really like the way it takes care of ViewModels by injecting it into Fragments that needs them.
+
+#### GSON
+
+GSON is a small JSON serialization and deserialization library from Google, which is commonly used in any Java or Kotlin application. 
+
+#### Picasso
+
+Pisasso is a very tiny library, that only does the job of downloading images for use in the GUI. This is something that also is fairy common to utilize and gives an clean and easy way to manage an otherwise, mildly annoying thing of downloading images.
+
+#### Retrofit
+
+Retrofit is a small library which provides an easier way to interact with APIs, in this project I'm using a GSON plugin so it will automatically deserialize the data to kotlin object, as well as I'm using a plugin which makes retrofit return RxJava type observables.
+
+Retrofit is a library commonly used in the wild, and with the easy integration with both GSON for json deserialization and RxJava for returning responses as an observable stream. 
 
 #### Anko
 
